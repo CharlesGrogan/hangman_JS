@@ -135,7 +135,7 @@ var wordGuessGame = {
   },
 
   // This fn sets the initial guesses the user gets
-  processUpdateTotoalGuesses: function() {
+  processUpdateTotalGuesses: function() {
     // The user will get more guesses the longer the word is
     this.totalGuesses = this.lettersOfTheWord.length + 5;
     this.guessesLeft = this.totalGuesses;
@@ -197,7 +197,7 @@ var wordGuessGame = {
     // var lettersOfTheWordClone = this.lettersOfTheWord.slice(); //clones the array
     // this.matchedLetters.sort().join('') == lettersOfTheWordClone.sort().join('')
     // Set win to false
-    if (this.natchedLetters.length === 0) {
+    if (this.matchedLetters.length === 0) {
       win = false;
     } else {
       win = true;
